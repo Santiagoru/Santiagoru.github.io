@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imc.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+    <div>
+        <label for="kg">Ingrese peso (kg):</label>
+        <input required type="number" id="kg" placeholder="Peso">
+    </div>
+    <div>
+        <label for="m">Ingrese estatura (m):</label>
+        <input required type="number" id="m" placeholder="Estatura">
+        <button id="calc">Calcular</button>
+
+    </div>
+    <div>
+        <p>IMC: <span id="imc"></span></p>
+        <p>Clasificacion: <span id="lectura"></span></p>
+    </div>
+
+    <script type="text/javascript">
+        calc = document.getElementById("calc");
+        kg = document.getElementById("kg");
+        m = document.getElementById("m");
+        imc = document.getElementById("imc");
+        lectura = document.getElementById("lectura");
+
+        calc.onclick = function () {
+
+            imcx = (kg.value / (m.value * m.value));
+            imc.innerHTML = imcx
+            console.log(imcx);
+
+            if (imcx < 18.5) { lectura.innerHTML = "Bajo de peso"; }
+            else if (imcx >= 18.5 && imcx <= 24.9) { lectura.innerHTML = "Saludable"; }
+            else if (imcx >= 25 && imcx <= 29.9) { lectura.innerHTML = "Sobrepeso"; }
+            else if (imcx >= 30 && imcx <= 34.9) { lectura.innerHTML = "Obesidad de grado 1"; }
+            else if (imcx >= 35 && imcx <= 39.9) {
+                lectura.innerHTML = "Obesidad de grado 2";
+            }
+            else if (imcx >= 40) { lectura.innerHTML = "Obesidad Morbida"; }
+
+
+        };
+    </script>
+</body>
+
+</html>
