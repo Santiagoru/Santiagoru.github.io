@@ -1,0 +1,51 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+    //background: linear-gradient(#00d4ff, #090979,#020024);
+  background-size:cover;
+  font-family: 'RocknRoll One', sans-serif;    
+
+}
+h1{
+    text-align: center;
+    font-size: 120px;
+    margin:0; padding:0; box-sizing:border-box;
+    color:#fca311;
+}
+h2{
+  //background-color:#e76f51 ;
+    text-align: center;
+    margin: 10px auto;
+    padding: .7em;
+    font-size: 1.8em;
+    width: 300px;
+    border: 5px solid #ffa260;
+    //transition: all 3s;
+    color: #ffa260;
+}
+h2:hover{
+border-color: #f1ff5c;
+color: white;
+box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c ;
+transform: translateY(-0.25em);
+transition: all .25s;
+cursor: pointer;
+}
+#uno{
+    //background-color: #f4a261;
+    //transform-origin: top;
+    
+}
+#dos{
+   // background-color: #e9c46a;
+}
+#tres{
+    //background-color: #2a9d8f;
+}
+#cuatro{
+    //background-color: #264653;
+}
+#cinco{
+    //background-color: #f4a261;
+    //transform-origin: top;
+    //transform: rotateY(180deg);
+}
