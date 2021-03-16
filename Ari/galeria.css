@@ -1,0 +1,19 @@
+img{
+    width:30%;
+    height: 30%;
+    margin: 1%;
+}
+header{
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(128, 128, 173);
+    width: 30%;
+    margin-left: 1%;
+    padding: 1.1em 0px;
+    font-family:  'RocknRoll One', sans-serif;
+    font-size: 1.5em;
+}
+img:hover{
+    transition: all .25s ease;
+    transform: scale(1.1);
+    filter:grayscale(25%) ;
+}
